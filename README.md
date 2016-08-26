@@ -16,7 +16,9 @@ Http Module for enabling multiple specific domains with Cross-origin resource sh
   <system.webServer>
     <modules>
       <add name="CorsModule" type="CORS.net_HttpModule.CorsModule, CorsModule" preCondition="managedHandler"/>
+      <!-- other modules -->
     </modules>
+    <!-- other settings -->
   </system.webServer>
   <!-- Other sections -->
 <configuration>
