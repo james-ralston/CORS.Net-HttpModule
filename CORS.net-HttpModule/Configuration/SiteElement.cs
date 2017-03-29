@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 
-namespace CORS.net_HttpModule.Congifuration
+namespace CORS.net_HttpModule.Configuration
 {
     public class Site : ConfigurationElement
     {
@@ -36,5 +31,25 @@ namespace CORS.net_HttpModule.Congifuration
                 return this["allowCredentials"] as string;
             }
         }
+
+        [ConfigurationProperty("allowOptions", IsRequired = false)]
+        public string AllowOptions
+        {
+            get
+            {
+                return this["allowOptions"] as string;
+            }
+        }
+
+        [ConfigurationProperty("allowHeaders", IsRequired = false)]
+        public string AllowHeaders
+        {
+            get
+            {
+                return this["allowHeaders"] as string;
+            }
+        }
+
+
     }
 }

@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CORS.net_HttpModule.Congifuration
+namespace CORS.net_HttpModule.Configuration
 {
     public class CorsConfig : ConfigurationSection
     {
         public static CorsConfig GetConfig()
         {
-            return (CorsConfig)System.Configuration.ConfigurationManager.GetSection("cors") ?? new CorsConfig();
+            return (CorsConfig)ConfigurationManager.GetSection("cors") ?? new CorsConfig();
         }
 
         [System.Configuration.ConfigurationProperty("sites")]

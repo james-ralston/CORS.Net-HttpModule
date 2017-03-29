@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Congifuration\CorsConfigSection.cs" />
-    <Compile Include="Congifuration\SiteCollection.cs" />
-    <Compile Include="Congifuration\SiteElement.cs" />
+    <Compile Include="Configuration\CorsConfigSection.cs" />
+    <Compile Include="Configuration\SiteCollection.cs" />
+    <Compile Include="Configuration\SiteElement.cs" />
     <Compile Include="CorsModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
